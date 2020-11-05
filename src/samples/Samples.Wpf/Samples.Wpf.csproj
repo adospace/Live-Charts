@@ -8,11 +8,12 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Samples.Wpf</RootNamespace>
     <AssemblyName>Samples.Wpf</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -287,10 +288,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\LiveCharts.Wpf.Geared\LiveCharts.Wpf.Geared\LiveCharts.Wpf.Geared.csproj" Condition="'$(Configuration)' == 'DebugGeared' OR '$(Configuration)' == 'ReleaseGeared'">
-      <Project>{a1a5d617-53f2-4dfc-9b72-05ace8c2c08c}</Project>
-      <Name>LiveCharts.Wpf.Geared</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\LiveCharts.Core\LiveCharts.csproj">
       <Project>{8caf054c-fb7c-405b-889d-59048650f4b4}</Project>
       <Name>LiveCharts.Core</Name>

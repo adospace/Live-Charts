@@ -122,10 +122,4 @@
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\LiveCharts.Xamarin\LiveCharts.Xamarin.csproj">
-      <Project>{94CC58E2-4247-4F26-AD4B-FEB86309DBC0}</Project>
-      <Name>LiveCharts.Xamarin</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
