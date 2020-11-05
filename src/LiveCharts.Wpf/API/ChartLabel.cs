@@ -112,7 +112,8 @@ namespace LiveCharts.Wpf
             set
             {
                 _fontFamily = value;
-                FontFamily = new System.Windows.Media.FontFamily(value);
+                if (value != null)
+                    FontFamily = new System.Windows.Media.FontFamily(value);
             }
         }
 
@@ -164,7 +165,7 @@ namespace LiveCharts.Wpf
                 if (_foreground != null) _foreground.Target = null;
                 _foreground = value;
                 Foreground = _foreground.AsWpfBrush();
-                _foreground.Target = Foreground;
+                if (_foreground != null) _foreground.Target = Foreground;
             }
         }
 

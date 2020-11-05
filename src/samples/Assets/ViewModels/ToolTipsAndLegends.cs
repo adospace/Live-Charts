@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Interaction.Controls;
+using LiveCharts.DataSeries;
+using LiveCharts.Interaction.Controls;
 
 namespace Assets.ViewModels
 {

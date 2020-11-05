@@ -27,10 +27,11 @@
 
 using System.Collections.ObjectModel;
 using System.Drawing;
-using LiveCharts.Core.Collections;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Drawing;
-using Brushes = LiveCharts.Core.Drawing.Brushes;
+using LiveCharts.Collections;
+using LiveCharts.DataSeries;
+using LiveCharts.Drawing;
+using LiveCharts.Drawing.Brushes;
+using LiveCharts.Drawing.Shapes;
 
 #endregion
 
@@ -54,7 +55,7 @@ namespace Assets.ViewModels
 
             // a custom fill and stroke, if we don't set these properties
             // LiveCharts will set them for us according to our theme.
-            lineSeries.Stroke = LiveCharts.Core.Drawing.Brushes.Purple;
+            lineSeries.Stroke = Brushes.Purple;
             lineSeries.Fill = Brushes.Transparent;
 
             // the beziers in the drawn line are calculated based on
@@ -65,7 +66,7 @@ namespace Assets.ViewModels
 
             // set a stroke dash array
             // 2 spaces for the stroked line, 2 spaces fot the white space
-            lineSeries.StrokeDashArray = new[] {2f, 2f};
+            lineSeries.StrokeDashArray = new[] {2d, 2d};
 
             // do not display a label for every point
             lineSeries.DataLabels = false;

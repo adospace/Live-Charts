@@ -2,8 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:LiveCharts.Wpf.Controls"
-    xmlns:points="clr-namespace:LiveCharts.Interaction.Points;assembly=LiveCharts.Core"
-    xmlns:series="clr-namespace:LiveCharts.DataSeries;assembly=LiveCharts.Core"
+    xmlns:points="clr-namespace:LiveCharts.Interaction.Points;assembly=LiveCharts"
+    xmlns:series="clr-namespace:LiveCharts.DataSeries;assembly=LiveCharts"
     xmlns:shapes="clr-namespace:LiveCharts.Wpf.Shapes"
     xmlns:wpf="clr-namespace:LiveCharts.Wpf"
     xmlns:converters="clr-namespace:LiveCharts.Wpf.Converters">

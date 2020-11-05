@@ -55,7 +55,7 @@ namespace LiveCharts.Charts
     {
         private static int _colorCount;       
         private Task _delayer = Task.FromResult(false);
-        private IList<Color> _colors = new List<Color>();
+        private IList<Color> _colors;
         private readonly HashSet<IResource> _resources = new HashSet<IResource>();
         private readonly Dictionary<IEnumerable, EnumerableResource> _enumerableResources =
             new Dictionary<IEnumerable, EnumerableResource>();

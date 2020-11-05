@@ -26,9 +26,9 @@
 #region
 
 using System.Collections.ObjectModel;
-using LiveCharts.Core.Collections;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Dimensions;
+using LiveCharts.Collections;
+using LiveCharts.DataSeries;
+using LiveCharts.Dimensions;
 
 #endregion
 

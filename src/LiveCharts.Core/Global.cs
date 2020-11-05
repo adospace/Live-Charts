@@ -37,6 +37,6 @@ namespace LiveCharts
         /// <summary>
         /// Gets or sets the current LivbeCharts settings.
         /// </summary>
-        public static Settings Settings { get; set; }
+        public static Settings Settings { get; set; } = new Settings();
     }
 }

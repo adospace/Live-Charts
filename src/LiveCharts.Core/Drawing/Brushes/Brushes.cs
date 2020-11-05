@@ -55,7 +55,7 @@ namespace LiveCharts.Drawing.Brushes
                 }
 
                 var assembly = Assembly.GetExecutingAssembly();
-                const string resourceName = "LiveCharts.Core.Assets.solidbrushes.txt";
+                const string resourceName = "LiveCharts.Assets.solidbrushes.txt";
 
                 using (var stream = assembly.GetManifestResourceStream(resourceName))
                 using (var reader = new StreamReader(stream ?? throw new InvalidOperationException()))

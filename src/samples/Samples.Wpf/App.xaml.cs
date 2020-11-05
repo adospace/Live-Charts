@@ -25,12 +25,10 @@
 #region
 
 using System.Windows;
-using LiveCharts.Core;
-using LiveCharts.Core.Themes;
+using LiveCharts;
+using LiveCharts.Themes;
 using LiveCharts.Wpf;
-#if GEARED
-using LiveCharts.Wpf.Geared;
-#endif
+
 
 #endregion
 
@@ -43,17 +41,14 @@ namespace Samples.Wpf
     {
         public App()
         {
-            LiveCharts.Core.Charts.Configure((System.Action<LiveCharts.Core.Charts>)((LiveCharts.Core.Charts charting) =>
+            Initialize.UI();
+
+            Global.Settings.Configure(options  =>
             {
-                LiveCharts.Wpf.Config.UsingWpf(charting
+                options
                     .LearnPrimitiveAndDefaultTypes()
-                    .SetTheme(Themes.MaterialDesign)
-)
-#if GEARED
-                    .UsingWpfGeared()
-#endif
-                    ;
-            }));
+                    .SetTheme(Themes.MaterialDesign);
+            });
         }
     }
 }

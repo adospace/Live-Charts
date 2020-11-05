@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Input;
-using LiveCharts.Core;
-using LiveCharts.Core.Charts;
-using LiveCharts.Core.Coordinates;
-using LiveCharts.Core.Interaction.Points;
+using LiveCharts;
+using LiveCharts.Charts;
+using LiveCharts.Coordinates;
+using LiveCharts.Interaction.Points;
 #if GEARED
     using LiveCharts.Wpf.Geared.Rendering.Gemini.Framework.Controls;
 #endif
@@ -39,16 +39,16 @@ namespace Samples.Wpf.Views
             IChartView chart, IEnumerable<IChartPoint> points, EventArgs args)
         {
             // Notice event args type is different if you are using the geared package.
-            if (LiveCharts.Core.Charts.Settings.UiProvider.Name == "LiveCharts.Wpf.Geared")
-            {
-                // ToDo: Handled events????
-            }
-            else
-            {
+            //if (Global.Settings.UiProvider.Name == "LiveCharts.Wpf.Geared")
+            //{
+            //    // ToDo: Handled events????
+            //}
+            //else
+            //{
                 var mbea = (MouseButtonEventArgs)args;
                 // the event is handled, so panning will be disabled while we click on a data point.
                 mbea.Handled = true;
-            }
+            //}
 
             var context = (Assets.ViewModels.EventsTests) DataContext;
 

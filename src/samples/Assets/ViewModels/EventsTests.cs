@@ -5,11 +5,11 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
 using Assets.Commands;
-using LiveCharts.Core.Charts;
-using LiveCharts.Core.Coordinates;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Dimensions;
-using LiveCharts.Core.Interaction.Points;
+using LiveCharts.Charts;
+using LiveCharts.Coordinates;
+using LiveCharts.DataSeries;
+using LiveCharts.Dimensions;
+using LiveCharts.Interaction.Points;
 
 namespace Assets.ViewModels
 {

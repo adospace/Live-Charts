@@ -28,13 +28,13 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Drawing;
-using LiveCharts.Core.Collections;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Defaults;
-using LiveCharts.Core.Dimensions;
-using LiveCharts.Core.Drawing;
-using LiveCharts.Core.Drawing.Styles;
-using Brushes = LiveCharts.Core.Drawing.Brushes;
+using LiveCharts.Collections;
+using LiveCharts.DataSeries;
+using LiveCharts.Defaults;
+using LiveCharts.Dimensions;
+using LiveCharts.Drawing;
+using LiveCharts.Drawing.Styles;
+using Brushes = LiveCharts.Drawing.Brushes;
 
 #endregion
 

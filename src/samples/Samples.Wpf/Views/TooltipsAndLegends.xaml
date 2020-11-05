@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:viewModels="clr-namespace:Assets.ViewModels;assembly=Assets"
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
-             xmlns:controls="clr-namespace:LiveCharts.Core.Interaction.Controls;assembly=LiveCharts.Core"
+             xmlns:controls="clr-namespace:LiveCharts.Interaction.Controls;assembly=LiveCharts"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
    <UserControl.DataContext>

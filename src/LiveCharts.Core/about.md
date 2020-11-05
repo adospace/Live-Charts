@@ -8,7 +8,7 @@ conventions to keep the code coherent.
 It is a dot net core project, the main task of the core is to calculate every 
 shape in the UI.
 
-### LiveCharts.Core.Charts
+### LiveCharts.Charts
 
 Contains the models of the supported charts, the model contains the logic of 
 how things are calcualted in the UI.
@@ -16,19 +16,19 @@ how things are calcualted in the UI.
 A chart model always has a chart view, the chart model calculates every shape 
 based on the chart view properties.
 
-#### LiveCharts.Core.Charts.IResource
+#### LiveCharts.Charts.IResource
 
 A chart has resources, every time an update happens all the resources that 
 were not used by the current update will be deleted from both, memory and the UI.
 
-A resource is always a element that lives in LiveCharts.Core, a resource could
+A resource is always a element that lives in LiveCharts, a resource could
 have a view in the UI.
 
-### LiveCharts.Core.Collections
+### LiveCharts.Collections
 
 A set of specialized collections for the library.
 
-### LiveCharts.Core.Coordinates
+### LiveCharts.Coordinates
 
 There are many different types of coordinates in the library, this namespace
 contains them all, every coordinate has different requirements, for example
@@ -49,15 +49,15 @@ while the max value of the range for the X axis would be *coordinate[0][1]*,
 we normally only use the first value (*coordinate[0][0]*) in the planeArray, but
 we can store as much values as we need in the X plane.
 
-### LiveCharts.Core.DataSeries
+### LiveCharts.DataSeries
 
 A series calculates every point shape, then requests the view to draw them.
 
-### LiveCharts.Core.Defaults
+### LiveCharts.Defaults
 
 The default types that the library already knows how to plot.
 
-### LiveCharts.Core.Dimensions
+### LiveCharts.Dimensions
 
 A dimension indicates a direction where something can be measured,
 in the case of a cartesian chart we have the X axis and the Y axis and some times
@@ -65,7 +65,7 @@ depending on the series we also have the Weight plane.
 
 A chart in livecharts could have as many dimensions as it requires.
 
-### LiveCharts.Core.Drawing
+### LiveCharts.Drawing
 
 Contains shapes, brushes, animations, styles related material.
 
@@ -74,11 +74,11 @@ Contains shapes, brushes, animations, styles related material.
 Contains what normally a view consumes from the core of the library: view interfaces, 
 view controls, points, and some events.
 
-### LiveCharts.Core.Themes
+### LiveCharts.Themes
 
 The default themes in the library.
 
-### LiveCharts.Core.Updating
+### LiveCharts.Updating
 
 Updates related material.
 

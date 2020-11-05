@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Assets.Commands;
-using LiveCharts.Core.DataSeries;
+using LiveCharts.DataSeries;
 
 namespace Assets.ViewModels
 {

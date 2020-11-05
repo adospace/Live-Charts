@@ -55,7 +55,7 @@ namespace LiveCharts.Wpf
         public IEnumerable<double> StrokeDashArray
         {
             get => _strokePath.Path.StrokeDashArray.Select(x => x);
-            set => _strokePath.Path.StrokeDashArray = new System.Windows.Media.DoubleCollection(value);
+            set => _strokePath.Path.StrokeDashArray = value == null ? new System.Windows.Media.DoubleCollection() : new System.Windows.Media.DoubleCollection(value);
         }
 
         public double StrokeDashOffset

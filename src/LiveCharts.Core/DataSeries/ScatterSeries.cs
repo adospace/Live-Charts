@@ -71,7 +71,7 @@ namespace LiveCharts.DataSeries
         }
 
         /// <summary>
-        /// Gets or sets the size of the <see cref="P:LiveCharts.Core.Abstractions.DataSeries.ISeries.Geometry" /> property.
+        /// Gets or sets the size of the <see cref="P:LiveCharts.Abstractions.DataSeries.ISeries.Geometry" /> property.
         /// </summary>
         /// <value>
         /// The size of the geometry.

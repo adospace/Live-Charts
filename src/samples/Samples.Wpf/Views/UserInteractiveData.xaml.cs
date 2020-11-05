@@ -4,10 +4,10 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using LiveCharts.Core.Charts;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Defaults;
-using LiveCharts.Core.Interaction.Points;
+using LiveCharts.Charts;
+using LiveCharts.DataSeries;
+using LiveCharts.Defaults;
+using LiveCharts.Interaction.Points;
 #if GEARED
 using LiveCharts.Wpf.Geared.Rendering.Gemini.Framework.Controls;
 #endif

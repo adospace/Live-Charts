@@ -40,7 +40,7 @@ namespace LiveCharts.Wpf
         IEnumerable<double> IDashable.StrokeDashArray
         {
             get => StrokeDashArray.AsEnumerable();
-            set => StrokeDashArray = new DoubleCollection(value);
+            set => StrokeDashArray = value == null ? null : new DoubleCollection(value);
         }
 
         public double Rotation
@@ -56,7 +56,7 @@ namespace LiveCharts.Wpf
                 if (_fill != null) _fill.Target = null;
                 _fill = value;
                 Fill = _fill.AsWpfBrush();
-                _fill.Target = Fill;
+                if (_fill != null) _fill.Target = Fill;
             }
         }
 
@@ -68,7 +68,7 @@ namespace LiveCharts.Wpf
                 if (_stroke != null) _stroke.Target = null;
                 _stroke = value;
                 Stroke = _stroke.AsWpfBrush();
-                _stroke.Target = Stroke;
+                if (_stroke != null) _stroke.Target = Stroke;
             }
         }
 

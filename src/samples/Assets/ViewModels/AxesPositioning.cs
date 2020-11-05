@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Dimensions;
+using LiveCharts.DataSeries;
+using LiveCharts.Dimensions;
 
 namespace Assets.ViewModels
 {

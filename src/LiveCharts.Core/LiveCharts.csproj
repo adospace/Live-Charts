@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net40|AnyCPU'">
-    <DocumentationFile>bin\Debug\net40\LiveCharts.Core.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net40\LiveCharts.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
-    <DocumentationFile>bin\Debug\net45\LiveCharts.Core.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net45\LiveCharts.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

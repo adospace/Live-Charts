@@ -583,7 +583,7 @@ namespace LiveCharts.Charts
                     plane.ActualReverse = plane.Dimension == 1;
                     if (plane.Reverse) plane.ActualReverse = !plane.ActualReverse;
 
-                    plane.ActualPointLength = plane.PointLength ?? context.PointLength;
+                    plane.ActualPointLength = plane.PointLength != null && plane.PointLength.Length >= 2 ? plane.PointLength : context.PointLength;
                     if (InvertXy)
                     {
                         plane.ActualPointLength = new[] { plane.ActualPointLength[1], plane.ActualPointLength[0] };

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Drawing;
+using LiveCharts.DataSeries;
+using LiveCharts.Drawing;
+using LiveCharts.Drawing.Shapes;
 
 namespace Assets.ViewModels
 {

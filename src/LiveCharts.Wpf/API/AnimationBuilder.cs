@@ -114,6 +114,9 @@ namespace LiveCharts.Wpf
                     break;
             }
 
+            if (double.IsNaN(from) || double.IsNaN(to))
+                return this;
+
             var animation = new DoubleAnimation
             {
                 RepeatBehavior = new RepeatBehavior(1),

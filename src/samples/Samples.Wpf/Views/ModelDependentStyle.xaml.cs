@@ -1,8 +1,9 @@
 ﻿using System.Windows.Controls;
 using Assets.Models;
-using LiveCharts.Core;
-using LiveCharts.Core.Coordinates;
-using LiveCharts.Core.Interaction.Series;
+using LiveCharts;
+using LiveCharts.Coordinates;
+using LiveCharts.Drawing.Brushes;
+using LiveCharts.Interaction.Series;
 using LiveCharts.Wpf;
 #if GEARED
 using LiveCharts.Wpf.Geared;
@@ -22,14 +23,14 @@ namespace Samples.Wpf.Views
             // in this case we will build a chart using the Player class
             // we need to teach LiveCharts how to map a player to a chart coordinate.
 
-            LiveCharts.Core.Charts.Configure(charting =>
+            Global.Settings.Configure(charting =>
             {
                 // we will map player to a point in a chart
                 // where the X coordinate will be the index of the player in our data collection
                 // and the Y coordinate is the player.Score property
 
                 // A mapper from player to a point coordinate
-                ModelToCoordinateMapper<Player, PointCoordinate> playerMapper = charting.LearnType<Player, PointCoordinate>(
+                ModelToCoordinateMapper<Player, PointCoordinate> playerMapper = charting.LearnMap<Player, PointCoordinate>(
                     (player, index) => new PointCoordinate(index, (float)player.Score));
 
                 // the LearnType method returns a new instance of ModelToCoordinateMapper class
@@ -39,7 +40,7 @@ namespace Samples.Wpf.Views
                 playerMapper
                     .When(
                         player => player.Score > 0, // when the score is greater than 0
-                        (sender, LiveCharts.Core.Interaction.Events.ModelStateEventArgs<Player, PointCoordinate> args) =>
+                        (sender, args) =>
                         {
                             // when score > 0 we are changing the visual stroke property to blue.
 
@@ -47,7 +48,7 @@ namespace Samples.Wpf.Views
                             // using to convert the brush to different platforms, in this case WPF and LiveCharts.Geared
                             // using the .AsGearedBrush() and .AsWpf() extensions.
 
-                            var blueBrush = LiveCharts.Core.Drawing.Brushes.Blue;
+                            var blueBrush = Brushes.Blue;
 
                             // notice the geared version uses a different shape!
 #if GEARED
@@ -60,9 +61,9 @@ namespace Samples.Wpf.Views
                         })
                     .When(
                         player => player.Score <= 0, // when lt or eq to 0
-                        (sender, LiveCharts.Core.Interaction.Events.ModelStateEventArgs<Player, PointCoordinate> args) =>
+                        (sender, args) =>
                         {
-                            var redBrush = LiveCharts.Core.Drawing.Brushes.Red;
+                            var redBrush = Brushes.Red;
 
 #if GEARED
                             var shape = (LiveCharts.Wpf.Geared.Drawing.Shapes.Path) args.Shape;

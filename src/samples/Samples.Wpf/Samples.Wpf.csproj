@@ -54,6 +54,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -290,7 +293,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\LiveCharts.Core\LiveCharts.csproj">
       <Project>{8caf054c-fb7c-405b-889d-59048650f4b4}</Project>
-      <Name>LiveCharts.Core</Name>
+      <Name>LiveCharts</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\LiveCharts.Wpf\LiveCharts.Wpf.csproj">
       <Project>{5d63b51d-7e4d-4868-8cef-db2419718cea}</Project>

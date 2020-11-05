@@ -20,6 +20,6 @@
         <lvc:CartesianChart Grid.Row="1"
                             Name="Chart"
                             Series="{Binding SeriesCollection}"
-                            AnimationLine="{Binding TimeLine}"/>
+                            /><!--AnimationLine="{Binding TimeLine}"-->
     </Grid>
 </UserControl>

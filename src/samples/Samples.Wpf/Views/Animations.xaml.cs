@@ -8,9 +8,9 @@
         public Animations()
         {
             InitializeComponent();
-            var dataContext = new Assets.ViewModels.Animations();
-            dataContext.PropertyChanged += (sender, args) => { Chart.ForceUpdate(true); };
-            DataContext = dataContext;
+            //var dataContext = new Assets.ViewModels.Animations();
+            //dataContext.PropertyChanged += (sender, args) => { Chart.ForceUpdate(true); };
+            //DataContext = dataContext;
         }
     }
 }

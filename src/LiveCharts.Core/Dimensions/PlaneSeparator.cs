@@ -4,8 +4,10 @@ using LiveCharts.Drawing;
 using LiveCharts.Drawing.Brushes;
 using LiveCharts.Drawing.Shapes;
 using LiveCharts.Interaction.Events;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 #if NET45 || NET46
 using Brush = LiveCharts.Drawing.Brushes.Brush;
 #endif
@@ -68,7 +70,7 @@ namespace LiveCharts.Dimensions
 
         internal void DrawShape(IChartView chart, AnimatableArguments animationArgs, RectangleViewModel vm)
         {
-            if (Shape == null)
+            if (Shape == null) // || new [] { Shape.Height, Shape.Width, Shape.Left, Shape.Top }.Any(_=>double.IsNaN(_))
             {
                 Shape = UIFactory.GetNewRectangle(chart.Model);
                 Shape.FlushToCanvas(chart.Canvas, true);

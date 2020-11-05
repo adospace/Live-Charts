@@ -146,8 +146,9 @@ namespace LiveCharts.Updating
         /// </summary>
         public void Dispose()
         {
-            Ranges = new float[0][][];
-            Collection.Clear();
+            //NOTE: adospace: it's not clear why we need to dispose these
+            //Ranges = new float[0][][];
+            //Collection.Clear();
         }
     }
 }

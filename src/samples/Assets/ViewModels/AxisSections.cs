@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Dimensions;
-using LiveCharts.Core.Drawing;
-using LiveCharts.Core.Drawing.Styles;
+using LiveCharts.DataSeries;
+using LiveCharts.Dimensions;
+using LiveCharts.Drawing;
+using LiveCharts.Drawing.Brushes;
+using LiveCharts.Drawing.Styles;
 
 namespace Assets.ViewModels
 {
@@ -42,7 +43,7 @@ namespace Assets.ViewModels
             xSection.Fill = new SolidColorBrush(Color.FromArgb(60, 244, 67, 54));
             xSection.Stroke = new SolidColorBrush(Color.FromArgb(244, 67, 54));
             xSection.StrokeThickness = 3;
-            xSection.StrokeDashArray = new float[] {3, 3};
+            xSection.StrokeDashArray = new [] {3d, 3d};
             xSection.LabelHorizontalAlignment = HorizontalAlignment.Right;
             xSection.LabelVerticalAlignment = VerticalAlignment.Bottom;
 
@@ -76,7 +77,7 @@ namespace Assets.ViewModels
                             Fill = new SolidColorBrush(Color.FromArgb(60, 244, 67, 54)),
                             Stroke = new SolidColorBrush(Color.FromArgb(244, 67, 54)),
                             StrokeThickness = 3,
-                            StrokeDashArray = new float[] {3, 3},
+                            StrokeDashArray = new double[] {3d, 3d},
                             LabelHorizontalAlignment = HorizontalAlignment.Right,
                             LabelVerticalAlignment = VerticalAlignment.Bottom
                         }

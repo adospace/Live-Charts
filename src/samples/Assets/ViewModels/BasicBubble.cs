@@ -26,10 +26,11 @@
 #region
 
 using System.Collections.ObjectModel;
-using LiveCharts.Core.Collections;
-using LiveCharts.Core.DataSeries;
-using LiveCharts.Core.Defaults;
-using LiveCharts.Core.Drawing;
+using LiveCharts.Collections;
+using LiveCharts.DataSeries;
+using LiveCharts.Defaults;
+using LiveCharts.Drawing;
+using LiveCharts.Drawing.Shapes;
 
 #endregion
 
